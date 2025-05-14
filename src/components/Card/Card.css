@@ -1,6 +1,7 @@
 .card {
     display: grid;
     grid-template-rows: max-content auto;
+    gap: 16px;
     background: white;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -8,6 +9,34 @@
 
 .card__info {
     display: flex;
+}
+
+.card__info > img {
+    width: 64px;
+}
+
+.card__info__name {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card__info__name--text {
+    font-size: 1.75rem;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.card__info__name--at {
+    font-size: 1.25rem;
+    display: flex;
+    color: #525252;
+    align-items: center;
+}
+
+.card__content {
+    font-size: 1.5rem;
+    color: #525252;
 }
 
 @media screen and (min-width: 375px) {
