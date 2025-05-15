@@ -1,4 +1,5 @@
 import './Card.css';
+import figurePic from '../../assets/profile-thumbnail.png';
 
 function Card() {
   const name = "Sarah Dole";
@@ -11,7 +12,7 @@ function Card() {
   return (
     <div className='card'>
         <div className='card__info'>
-          <img src="./src/assets/profile-thumbnail.png" />
+          <img src={ figurePic } />
           <div className='card__info__name'>
             <div className='card__info__name--text'>
               <span>{ name }</span>
